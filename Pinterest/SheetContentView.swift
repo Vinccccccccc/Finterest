@@ -49,22 +49,22 @@ struct SheetContentView: View {
                                             .frame(width: 55, height: 55)
                                             .foregroundColor(Color(white: 0.3))
                                         
-                                        Image(imageNames[index]) // Usa il nome dell'immagine dall'array
+                                        Image(imageNames[index])
                                             .resizable()
-                                            .scaledToFill() // Riempie completamente il cerchio senza tagliare l'immagine
-                                            .frame(width: imageSizes[index].width, height: imageSizes[index].height) // Dimensioni diverse per ogni cerchio
+                                            .scaledToFill()
+                                            .frame(width: imageSizes[index].width, height: imageSizes[index].height)
                                             .clipShape(Circle())
                                            
                                     }
                                     Text(captions[index])
-                                        .font(.system(size: 15)) // Dimensione del carattere aumentata
+                                        .font(.system(size: 15))
                                 }
                             }
                         }
                         .padding()
                     }
                     Divider()
-                        .frame(height: 2) // Aumenta l'altezza del Divider
+                        .frame(height: 2)
                                                 .background(Color.white.opacity(0.8))
                    
                     VStack(alignment: .leading, spacing: 20) {
@@ -85,7 +85,7 @@ struct SheetContentView: View {
                     Spacer()
                     
                     Button(action: {
-                        // Chiude la vista corrente
+                       
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
                         ZStack {

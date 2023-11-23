@@ -81,8 +81,6 @@ struct PinterestStyleLayout: View {
 
 struct PinterestMainContent: View {
     var body: some View {
-        // Schermata principale
-        // Aggiungi qui il contenuto della schermata principale
         Text("Contenuto principale")
     }
 }
